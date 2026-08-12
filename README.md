@@ -10,6 +10,33 @@ The official installer often fails with "Unable to locate a valid executable" or
 *   The original STEP 7 Micro/WIN V4.0 SP9 Update files (`data1.hdr`, `data1.cab`, `data2.cab`).
 *   A Linux environment for native extraction (e.g., Arch Linux via Termux).
 *   Windows 11 (64-bit).
+---
+## ⚡ Quick Start (Pre-Configured Release)
+
+If you want to skip the manual extraction process, you can use the pre-configured files provided in the **Releases** section of this repository.
+
+**Step 1: Download the Assets**
+Head to the [Releases](../../releases) page and download the following files:
+*   `S7-200_Software.zip` (The pre-extracted and flattened IDE)
+*   `LanguageFix.reg` (The registry patch)
+*   `step7_mw_v4_sp8_9.zip` (Required only if you need the PC/PPI cable drivers)
+
+**Step 2: Place the Files**
+Extract `S7-200_Software.zip` directly to the root of your `C:\` drive. 
+*   **Critical:** The path must be exactly `C:\S7-200_Software` for the registry fix to work.
+
+**Step 3: Apply the Registry Patch**
+Double-click the downloaded `LanguageFix.reg` file. Click **Yes** when Windows asks if you want to merge it into the registry. This prevents the software from crashing on startup.
+
+**Step 4: Install Cable Drivers (Optional but Recommended)**
+If you need to connect to a PLC or microcontroller via a PC/PPI cable:
+1. Extract `step7_mw_v4_sp8_9.zip`.
+2. Navigate to `Disk1\COMM` and run `setup.exe` as Administrator.
+3. **Note:** Windows 11 will throw Fatal/Assertion errors regarding `siem_isotrans` because it lacks legacy 32-bit network stacks. Click **Ignore / Yes / OK** on all prompts to bypass the network failure and force the USB drivers to install. 
+4. Restart your PC.
+
+**Step 5: Launch**
+Navigate to `C:\S7-200_Software\Program_Executable_FILES`. Right-click **`microwin.exe`** and select **Run as administrator**. 
 
 ---
 
