@@ -55,7 +55,7 @@ Without an official installation, the IDE lacks its language mapping and will si
  * Create a file named LanguageFix.reg.
  * Add the following code:
 ```
-   Windows Registry Editor Version 5.00
+Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Siemens\MicroSystems\STEP 7-MicroWIN]
 "Path"="C:\\S7-200_Software\\Program_Executable_FILES"
