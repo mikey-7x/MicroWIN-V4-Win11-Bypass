@@ -47,8 +47,10 @@ You must install the S7DOS stack for your PC/PPI programming cable to communicat
  * CRITICAL: The installer will throw an Assertion Error and a Fatal Error (0x80070002 regarding siem_isotrans / sntienx.dll). This is because modern Windows 11 lacks the legacy 32-bit ISO Transport network stack.
  * Ignore and Bypass: Click Ignore, Yes, or OK on all error prompts to force the installer to push through. The USB/Serial communication drivers will successfully drop onto the disk before the network stack fails.
  * Restart Windows 11.
+
 Step 4: The Language Registry Patch
 Without an official installation, the IDE lacks its language mapping and will silently crash immediately after the splash screen.
+
  * Create a file named LanguageFix.reg.
  * Add the following code:
    Windows Registry Editor Version 5.00
