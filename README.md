@@ -31,7 +31,8 @@ unshield -d S7-200_Software x data1.cab
 ```
  * Transfer the extracted S7-200_Software folder to your Windows 11 C:\ drive (C:\S7-200_Software).
 
-Step 2: Flattening the DLLs
+Step 2: Flattening the DLLs:
+
 unshield extracts files into separate subdirectories, breaking the application's local pathway mapping.
 
  * Open C:\S7-200_Software on Windows 11.
