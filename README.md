@@ -30,10 +30,11 @@ Double-click the downloaded `LanguageFix.reg` file. Click **Yes** when Windows a
 
 **Step 4: Install Cable Drivers (Optional but Recommended)**
 If you need to connect to a PLC or microcontroller via a PC/PPI cable:
-1. Extract `step7_mw_v4_sp8_9.zip`.
-2. Navigate to `Disk1\COMM` and run `setup.exe` as Administrator.
-3. **Note:** Windows 11 will throw Fatal/Assertion errors regarding `siem_isotrans` because it lacks legacy 32-bit network stacks. Click **Ignore / Yes / OK** on all prompts to bypass the network failure and force the USB drivers to install. 
-4. Restart your PC.
+1. Extract `step7_mw_v4_sp8_9.zip`
+This extracted file show two another zip files which is MW409Update.zip (for x86_64) and 4_0_8_06_Service_Pack.zip (for x86_32).
+3.Extract MW409Update.zip.Navigate to `Disk1\COMM` and run `setup.exe` as Administrator.
+4. **Note:** Windows 11 will throw Fatal/Assertion errors regarding `siem_isotrans` because it lacks legacy 32-bit network stacks. Click **Ignore / Yes / OK** on all prompts to bypass the network failure and force the USB drivers to install. 
+5. Restart your PC.
 
 **Step 5: Launch**
 Navigate to `C:\S7-200_Software\Program_Executable_FILES`. Right-click **`microwin.exe`** and select **Run as administrator**. 
